@@ -50,7 +50,7 @@
     <nav class="page-nav">
       <ul class="page-nav__list">
         <li class="page-nav__item">
-          <a class="page-nav__link _active" href="#">
+          <a class="page-nav__link" href="#">
             Знания
           </a>
         </li>
@@ -120,7 +120,7 @@
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__item-link _active" href="#">
+                <a class="nav__item-link" href="#">
                   Знания
                 </a>
               </li>
@@ -202,7 +202,13 @@
               →
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link breadcrumbs__link--current ">Мой профиль</a>
+              <a class="breadcrumbs__link" href="/">Новости</a>
+            </li>
+            <li class="breadcrumbs__item">
+              →
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--current" href="/">Как успевать в 2 раза больше?</a>
             </li>
           </ul>
         </div>
@@ -211,252 +217,547 @@
 
     <main class="main">
       <div class="main__inner">
+        <div class="main__columns">
+          <div class="main__left-col left">
+            <div class="left__inner">
+              <a class="left__person" href="#">
+                <div class="left__person-img-wrapper">
+                  <img class="left__person-img" src="images/left/person.jpg" alt="">
+                </div>
+                <h3 class="left__person-name">
+                  Светлана Светлановна
+                </h3>
+                <span class="left__person-date">
+                  Дата публикации: <date>11.11.2011</date>
+                </span>
+              </a>
 
-        <!-- info start -->
-        <section class="info">
-          <div class="container">
-
-            <div class="info__inner">
-              <section class="info__main-section person">
-                <div class="person__top">
-                  <div class="person__img-wrapper">
-                    <picture>
-                      <source srcset="images/person/avatar.webp" type="image/webp">
-                      <img class="person__img" src="images/person/avatar.png" alt="person">
-                    </picture>
+              <a class="left__card" href="#" data-place-to="card-2">
+                <h2 class="left__card-title">
+                  ВОЗМОЖНО ТЕБЕ БУДЕТ ПОЛЕЗНО ИЗУЧИТЬ
+                </h2>
+                <div class="left__card-inner">
+                  <div class="left__card-img-wrapper">
+                    <img class="left__card-img" src="images/additional/back.jpg" alt="">
                   </div>
-                  <div class="person__data">
-                    <h1 class="person__name">
-                      Алиса Мальганова
-                    </h1>
-                    <p class="person__post">
-                      Веб-дизайнер
+                  <div class="left__card-info">
+                    <h3 class="left__card-inner-title">
+                      Становление Фриланс-Сэра
+                    </h3>
+                    <p class="left__card-inner-text">
+                      Как стать для заказчиков №1. Здесь о том, как заставить заказчика выбирать тебя, а не других.
                     </p>
                   </div>
                 </div>
-                <div class="person__bottom">
-                  <p class="person__main-text">
-                    Я создаю комплексных чат-ботов для каналов (от простых настроек с авто-приемом, до реферальной
-                    систем с выдачей бонусов)
-                  </p>
-                  <button class="person__edit-btn">
-                    <img class="person__edit-img" src="images/person/edit.svg" alt="">
-                  </button>
-                </div>
-              </section>
-              <section class="info__rank-section rank">
-                <div class="rank__num-wrapper">
-                  <picture>
-                    <source srcset="images/rank/background.webp" type="image/webp">
-                    <img class="rank__num-img" src="images/rank/background.png" alt="">
-                  </picture>
-                  <span class="rank__num">
-                    2
-                  </span>
-                </div>
-                <div class="rank__value-wrapper">
-                  <span class="rank__text">
-                    Твой ранг
-                  </span>
-                  <span class="rank__value">
-                    Кандидат
-                  </span>
-                </div>
-
-                <div class="rank__next-wrapper">
-                  <span class="rank__next-text">
-                    Следующий ранг
-                  </span>
-                  <span class="rank__next-value">
-                    Последователь
-                  </span>
-                  <div class="rank__input-wrapper">
-                    <input class="rank__input vhidden" type="range" value="65">
-                    <div class="rank__fake-input">
-                      <span class="rank__fake-input-value" style="width: 65%;"></span>
-                    </div>
-                    <img class="rank__input-img" src="images/rank/crown.svg" alt="">
-                  </div>
-                  <span class="rank__points">65 из 100</span>
-                </div>
-                <a class="rank__link" href="#">
-                  Что такое влияние и ранги?
-                </a>
-              </section>
-            </div>
-          </div>
-        </section>
-        <!-- info end -->
-
-        <!-- goal start -->
-        <section class="goal">
-          <div class="container">
-            <div class="goal__inner">
-              <div class="goal__card">
-                <h2 class="goal__title">
-                  Давай поставим цель на неделю?
-                </h2>
-                <p class="goal__text">
-                  Видеть прогресс и заниматься регулярно — эффективный инструмент для достижения большой цели. Поставь
-                  цель и настрой расписание, а мы будем присылать тебе напоминания. А ещё за каждую цель ты получишь
-                  влияние!
-                </p>
-                <button class="goal__btn">
-                  Поставить цель
-                </button>
-                <picture>
-                  <source srcset="images/goal/bg.webp" type="image/webp">
-                  <img class="goal__img" src="images/goal/bg.png" alt="">
-                </picture>
-              </div>
-              <a class="goal__link" href="#">
-                Журнал прошлых целей
               </a>
             </div>
           </div>
-        </section>
-        <!-- goal end -->
-
-        <!-- talents start -->
-        <section class="talents">
-          <div class="container">
-            <div class="talents__inner">
-              <div class="talents__top">
-                <h2 class="talents__title">
-                  Твои таланты
-                </h2>
-                <label class="talents__label">
-                  <span class="talents__label-text">
-                    Скрыть пройденные
+          <div class="main__right-col right">
+            <div class="right__inner news">
+              <h1 class="title _mini">
+                Как успевать в 2 раза больше?
+              </h1>
+              <p class="par">
+                Lorem ipsum dolor sit amet consectetur. Tellus ut dolor integer sit scelerisque vitae auctor. Nulla arcu
+                tincidunt cras non. Arcu molestie eu sit sodales dignissim imperdiet. Egestas amet consectetur turpis in
+                non nam gravida porttitor non.
+              </p>
+              <picture>
+                <source srcset="images/right/main.webp" type="image/webp">
+                <img class="img" src="images/right/main.jpg" alt="">
+              </picture>
+              <p class="par">
+                Lorem ipsum dolor sit amet consectetur. Duis quisque nisl quis dictumst ultrices. Cras id arcu sit
+                cursus ut. Quis volutpat amet tortor lectus cras urna nunc massa. Sagittis enim dui adipiscing nibh.
+                Senectus nulla cursus tortor velit pellentesque vitae proin. Nulla elementum leo hendrerit nulla. Massa
+                turpis nibh ornare enim sagittis integer nunc in. A suspendisse eget velit sapien pellentesque orci id
+                eu leo. Nam ut odio vulputate leo etiam in placerat.
+                Pellentesque volutpat habitasse sit tristique dictum. Integer faucibus amet quis vulputate in eget.
+                Gravida pellentesque ut gravida nisl sit neque. Porttitor ultrices feugiat est lacinia dignissim quis
+                varius nullam. Elementum nunc ac amet morbi vulputate urna. Elit at morbi et lorem quam tellus quis sed.
+                Arcu morbi magna venenatis massa fermentum. Dictum risus donec at bibendum vitae.
+                Sagittis massa tortor nisl nisl a purus scelerisque sit. Et mattis sed lorem neque. Orci in elementum
+                nibh mollis id etiam nisi euismod varius. Eget felis pretium lectus urna interdum sit duis. Feugiat sed
+                eu curabitur id mauris nibh vitae.
+                Risus est pharetra arcu amet varius velit ipsum malesuada dictum. Fringilla mattis egestas gravida est
+                lacus pellentesque. Ac vitae cras urna pretium tortor imperdiet tincidunt. Mauris donec mauris sit quam
+                volutpat commodo dolor a. Arcu diam volutpat et porta. Quam congue id nunc magna sollicitudin et aliquet
+                ut. Eros odio urna a magna ornare commodo vestibulum fusce. At ac porta nunc.
+              </p>
+              <blockquote class="quote">
+                <img class="quote__img" src="images/quote/main.svg" alt="Кавычки">
+                <h3 class="quote__text">
+                  На фрилансе, чем быстрее работаешь, тем больше зарабатываешь
+                </h3>
+                <p class="quote__author">
+                  А. М. Волков
+                </p>
+                <p class="quote__is">
+                  велкий фрилансер средних веков
+                </p>
+              </blockquote>
+              <p class="par" data-place-name="card-1">
+                <span class="par__span">
+                  Lorem ipsum dolor sit amet consectetur. Mauris arcu non tortor scelerisque velit. Consectetur proin
+                  elit egestas semper ultrices non aliquet sagittis mauris. Placerat sed lobortis et sit ut nunc. Amet
+                  sed massa odio diam praesent. Vulputate viverra adipiscing sit fermentum molestie consectetur. Odio
+                  vel amet amet risus maecenas varius eget pulvinar purus.
+                </span>
+                <span class="par__span">
+                  Ornare sed posuere nec mi adipiscing viverra rhoncus arcu sit. Viverra senectus amet ante viverra
+                  egestas nec nisl lorem. Eu donec et morbi rutrum sed mauris vitae. Integer eu rhoncus urna nulla
+                  tincidunt. Pretium donec in ac accumsan dui pretium. Dolor egestas faucibus ut dui. Pulvinar et nisl
+                  purus arcu montes ut quam. Eget in vivamus eu nunc nam egestas. Dui blandit tellus neque eget pretium
+                  aenean iaculis. Sed aliquet facilisis a ullamcorper tristique convallis. Sed est adipiscing mattis
+                  justo mauris ipsum nisi. Vitae sapien lectus nisl porta dignissim potenti aliquet sed. Nullam nulla
+                  nullam viverra eget. Mollis ac dolor tempus fermentum placerat.
+                </span>
+                <span class="par__span">
+                  Viverra mattis condimentum ullamcorper nec porttitor vivamus imperdiet. Lectus phasellus tempor congue
+                  fames massa sit metus pulvinar. Amet pulvinar aenean a in amet mauris. Nibh condimentum imperdiet
+                  neque in. Commodo proin facilisi volutpat dignissim convallis enim. Morbi viverra id risus proin.
+                  Turpis ultrices nunc et risus turpis non sodales magna massa. Et duis tellus amet non sit.
+                </span>
+              </p>
+              <h2 class="subtitle">
+                Но 10 задач получается 10 часов, а дышать когда?
+              </h2>
+              <p class="par">
+                Нет совсем. Когда у каждой задачи появляется свой отдельный дедлайн, то она решается быстрее, и
+                некоторые отлетают мин за 15.
+                И действительно, без часового дедлайна аналогичные 15-минутные задачи растягиваются на несколько часов.
+              </p>
+              <p class="par">
+                Но бывает и что-то сложное, что за час не успеваешь. Такую сложную задачу я бросаю в конец списка и
+                перехожу к следующей.
+              </p>
+              <p class="par">
+                Из плюсов лично для меня:
+              </p>
+              <ol class="news__list">
+                <li class="news__list-item">
+                  <span class="news__item-title">1. Меньше отвлекаюсь</span>
+                  <span class="news__item-text">
+                    Дедлайн в 1 час воспринимается как — "у меня очень мало времени". Это сразу убирает отвлекания и
+                    залипания в мысли, просмотр ленты, уведомления в мессенджере и т.д.
                   </span>
-                  <input class="talents__input vhidden" type="checkbox">
-                  <span class="talents__fake-input">
-                    <span class="talents__fake-input-circle"></span>
+                </li>
+                <li class="news__list-item">
+                  <span class="news__item-title">2. Больше выносливости
                   </span>
-                </label>
+                  <span class="news__item-text">
+                    В своё время на фрилансе я попробовал много различных направлений. Поэтому сегодня у меня много
+                    заказчиков с абсолютно разными запросами. Для меня отдых — это смена деятельности.
+                    Просто эти два явления удачно сложились и получился чит-код. Переключаюсь между разными задачами и
+                    усталость приходит намного позже.
+                  </span>
+                </li>
+                <li class="news__list-item">
+                  <span class="news__item-title">3. Меньше блуждающих дел.
+                  </span>
+                  <span class="news__item-text">
+                    Когда ставлю задачи на день, то они легко могут упрыгать на следующий. Слегка не рассчитал время и
+                    задача сегодня уже не сделана.
+                    Когда задача на час и ты не рассчитал время, то у неё погрешность измеряется уже в часах, а не
+                    сутках. Получается больше шансов её выловить и сделать за сегодня.
+                  </span>
+                </li>
+                <li class="news__list-item">
+                  <span class="news__item-title">4. Нет невыполнимых и растянутых задач.
+                  </span>
+                  <span class="news__item-text">
+                    Раньше часто были задания, которые делаются неоправданно долго. Задача сама по себе несложная, но в
+                    моменте ты пытаешься её решить, а у тебя нет в голове нужного решения.
+                    Вместо применения адекватности, я начинал маниакально увлекаться задачей. Потел над решением и
+                    считал её каким-то врагом, которого я сейчас уделаю. По факту просто несколько часов растягивал
+                    время никак не продвигаясь. От такого веселья не замечаешь как пролетает весь день и полностью
+                    убитый ты идёшь спать.
+                  </span>
+                  <span class="news__item-text">
+                    Утром просыпаешься и решение приходит само — "Здрасьте, вы меня вчера ждали, но я немного
+                    задержалось". И напрягает, что решение было максимально очевидным, но было убито много времени. В
+                    новом подходе эта проблема полностью исчезла. Я теперь не могу выполнять одну задачу больше часа,
+                    поэтому скидываю её в конец списка. А когда возвращаюсь, то часто мозг уже знает к ней более изящное
+                    и быстрое решение.
+                  </span>
+                </li>
+              </ol>
+              <div class="note">
+                <p class="note__text">
+                  Какая-то сноска, может быть ссылка на другу новость по теме. Или объяснение определения. Короче,
+                  выделенный текст.
+                </p>
               </div>
-              <div class="talents__main">
-                <ul class="talents__list">
-                  <li class="talents__item _modification">
-                    <a class="talents__link" href="#">
-                      <span class="talents__item-status">Требует доработки</span>
-                      <picture>
-                        <source srcset="images/talents/1.webp" type="image/webp">
-                        <img class="talents__item-img" src="images/talents/1.png" alt="">
-                      </picture>
-                      <div class="talents__item-main">
-                        <h3 class="talents__item-title">
-                          Уничтожаем конкурентов
-                        </h3>
-                        <p class="talents__item-text">
-                          Lorem ipsum dolor sit amet consectetur. Est orci aliquet id leo eget a. Odio donec urna mattis
-                          aliquam gravida. Ut vitae nibh magna mi et massa ac. Tortor eget massa feugiat ut dolor.
-                          Sollicitudin tempus eget gravida placerat tincidunt nunc dolor.
-                        </p>
-                      </div>
-                      <div class="talents__item-info">
-                        <span class="talents__lessons">
-                          5 уроков, 11 заданий
-                        </span>
-                        <span class="talents__update">
-                          Обновлено: <date class="talents__date">20.06.2023</date>
-                        </span>
-                      </div>
+              <p class="par">
+                Lorem ipsum dolor sit amet consectetur. Morbi pretium amet cras pretium risus habitant at dictumst
+                convallis. Venenatis eget duis quis ipsum quam id ut euismod. Nulla egestas faucibus magna sed ac
+                suscipit et tincidunt. Facilisi arcu eu lorem odio mi. Velit commodo arcu at ut aliquet ac facilisis
+                nunc. Convallis vulputate neque pretium adipiscing quam integer. Sagittis arcu in sed at placerat varius
+                sagittis sed. Id vestibulum proin vivamus in. Id diam mollis id sit sagittis mauris sed. Vulputate
+                lectus vitae libero aliquam lorem quis. Nisi arcu vitae eu neque facilisis morbi nunc. Urna porta arcu
+                ipsum eros varius amet.
+                Amet ut netus integer porta molestie non scelerisque. Vestibulum tincidunt ut tristique volutpat est ac
+                sed tortor facilisi. Nunc mi volutpat tellus nunc feugiat. Parturient lobortis tristique non consequat
+                est odio. Ac lacinia tempor.
+              </p>
+              <footer class="share">
+                <ul class="share__tags">
+                  <li class="share__tag">
+                    <a class="share__tag-title" href="#">
+                      Дизайн
                     </a>
                   </li>
-
-                  <li class="talents__item _passed">
-                    <a class="talents__link" href="#">
-                      <span class="talents__item-status">Пройдено </span>
-                      <picture>
-                        <source srcset="images/talents/2.webp" type="image/webp">
-                        <img class="talents__item-img" src="images/talents/2.png" alt="">
-                      </picture>
-                      <div class="talents__item-main">
-                        <h3 class="talents__item-title">
-                          Становление Фриланс-Сэра
-                        </h3>
-                        <p class="talents__item-text">
-                          Как стать для заказчиков №1. Здесь о том, как заставить заказчика выбирать тебя, а не других.
-                        </p>
-                      </div>
-                      <div class="talents__item-info">
-                        <span class="talents__lessons">
-                          5 уроков, 11 заданий
-                        </span>
-                        <span class="talents__update">
-                          Обновлено: <date class="talents__date">20.06.2023</date>
-                        </span>
-                      </div>
+                  <li class="share__tag">
+                    <a class="share__tag-title" href="#">
+                      маркетинг
                     </a>
                   </li>
-
-                  <li class="talents__item _studied">
-                    <a class="talents__link" href="#">
-                      <span class="talents__item-status">Изучено</span>
-                      <picture>
-                        <source srcset="images/talents/2.webp" type="image/webp">
-                        <img class="talents__item-img" src="images/talents/2.png" alt="">
-                      </picture>
-                      <div class="talents__item-main">
-                        <h3 class="talents__item-title">
-                          Становление Фриланс-Сэра
-                        </h3>
-                        <p class="talents__item-text">
-                          Как стать для заказчиков №1. Здесь о том, как заставить заказчика выбирать тебя, а не других.
-                        </p>
-                      </div>
-                      <div class="talents__item-info">
-                        <span class="talents__lessons">
-                          5 уроков, 11 заданий
-                        </span>
-                        <span class="talents__update">
-                          Обновлено: <date class="talents__date">20.06.2023</date>
-                        </span>
-                      </div>
+                  <li class="share__tag">
+                    <a class="share__tag-title" href="#">
+                      ux
                     </a>
                   </li>
-                  <li class="talents__item _inspection">
-                    <a class="talents__link" href="#">
-                      <span class="talents__item-status">На проверке</span>
-                      <picture>
-                        <source srcset="images/talents/2.webp" type="image/webp">
-                        <img class="talents__item-img" src="images/talents/2.png" alt="">
-                      </picture>
-                      <div class="talents__item-main">
-                        <h3 class="talents__item-title">
-                          Становление Фриланс-Сэра
-                        </h3>
-                        <p class="talents__item-text">
-                          Как стать для заказчиков №1. Здесь о том, как заставить заказчика выбирать тебя, а не других.
-                        </p>
-                      </div>
-                      <div class="talents__item-info">
-                        <span class="talents__lessons">
-                          5 уроков, 11 заданий
-                        </span>
-                        <span class="talents__update">
-                          Обновлено: <date class="talents__date">20.06.2023</date>
-                        </span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="talents__item-more">
-                    <div class="talents__item-more-inner">
-                      <p class="talents__item-more-text">
-                        Тут могло бы быть больше твоих талантов
+                </ul>
+                <a class="share__share" href="#">
+                  <svg class="share__share-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="icon:tg">
+                      <rect id="Rectangle 7" width="40" height="40" rx="20" fill="white" />
+                      <path id="Vector"
+                        d="M21.375 11C21.1942 10.9993 21.0151 11.0333 20.848 11.1001C20.6808 11.1668 20.5289 11.265 20.4011 11.389C20.2733 11.5129 20.172 11.6602 20.1032 11.8223C20.0343 11.9844 19.9993 12.1581 20 12.3333V15.7453C13.8125 16.4093 9 21.4907 9 27.6667V29C12.0869 24.436 16.2188 23.7733 20 23.6813V27C19.9994 27.264 20.0797 27.5221 20.2307 27.7418C20.3816 27.9614 20.5965 28.1326 20.848 28.2336C21.0995 28.3346 21.3762 28.3608 21.6432 28.309C21.9101 28.2573 22.1551 28.1297 22.3471 27.9427L31 19.6667L22.3471 11.3893C22.2195 11.2655 22.068 11.1674 21.9011 11.1006C21.7343 11.0338 21.5555 10.9996 21.375 11Z"
+                        fill="#422921" />
+                    </g>
+                  </svg>
+                </a>
+              </footer>
+              <div class="gift">
+                <div class="gift__inner">
+                  <h3 class="gift__title">
+                    Lorem ipsum dolor sit amet consectetur. Fusce amet.
+                  </h3>
+                  <p class="gift__text">
+                    Lorem ipsum dolor sit amet consectetur. Dolor enim tortor ut id ac. Tristique tempor magna volutpat
+                    condimentum nulla vitae viverra sit. Dolor ut nisi at leo sed id amet sem. Hac volutpat diam
+                    adipiscing sed dignissim. Ac nisl bibendum elementum tortor ultricies gravida. Non egestas mollis
+                    commodo nulla integer. Donec eget amet ultricies rhoncus.
+                  </p>
+                  <button class="gift__btn btn">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </button>
+                  <img class="gift__img" src="images/gift/main.svg" alt="">
+                </div>
+              </div>
+              <div class="news__comments comments">
+                <header class="comments__header">
+                  <span class="comments__quantity">2 комментария</span>
+                  <a class="comments__header-text" href="#">
+                    Войти, чтобы оставить комментарий
+                  </a>
+                </header>
+                <div class="comments__add">
+                  <textarea class="comments__textarea" placeholder="Написать комментарий"></textarea>
+                  <div class="comments__add-btn">
+                    <svg class="comments__add-btn-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g id="icon:tg">
+                        <rect id="Rectangle 7" width="40" height="40" rx="20" fill="#422921" />
+                        <path id="Vector"
+                          d="M29.99 12C29.99 10.9 29.1 10 28 10H12C10.9 10 10 10.9 10 12V24C10 25.1 10.9 26 12 26H26L30 30L29.99 12ZM25 22H15C14.45 22 14 21.55 14 21C14 20.45 14.45 20 15 20H25C25.55 20 26 20.45 26 21C26 21.55 25.55 22 25 22ZM25 19H15C14.45 19 14 18.55 14 18C14 17.45 14.45 17 15 17H25C25.55 17 26 17.45 26 18C26 18.55 25.55 19 25 19ZM25 16H15C14.45 16 14 15.55 14 15C14 14.45 14.45 14 15 14H25C25.55 14 26 14.45 26 15C26 15.55 25.55 16 25 16Z"
+                          fill="#F9F2F1" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <ul class="comments__list">
+                  <li class="user-comment">
+                    <div class="user-comment__img-wrapper">
+                      <img class="user-comment__img" src="images/user-comment/person.jpg" alt="">
+                    </div>
+                    <div class="user-comment__info">
+                      <h4 class="user-comment__name">
+                        Владимир Морозов
+                      </h4>
+                      <date class="user-comment__date">
+                        8.11.2023 15:43
+                      </date>
+                      <p class="user-comment__text">
+                        Lorem ipsum dolor sit amet consectetur. Metus sed dui quis ornare interdum rhoncus senectus non.
+                        Imperdiet elementum nunc nullam facilisis orci donec enim eget. In risus interdum habitant
+                        vulputate.
                       </p>
-                      <button class="talents__item-more-btn">
-                        перейти к изучению
-                      </button>
+                    </div>
+                  </li>
+                  <li class="user-comment">
+                    <div class="user-comment__img-wrapper">
+                      <img class="user-comment__img" src="images/user-comment/person.jpg" alt="">
+                    </div>
+                    <div class="user-comment__info">
+                      <h4 class="user-comment__name">
+                        Владимир Морозов
+                      </h4>
+                      <date class="user-comment__date">
+                        8.11.2023 15:43
+                      </date>
+                      <p class="user-comment__text">
+                        Lorem ipsum dolor sit amet consectetur. Metus sed dui quis ornare interdum rhoncus senectus non.
+                        Imperdiet elementum nunc nullam facilisis orci donec enim eget. In risus interdum habitant
+                        vulputate.
+                      </p>
                     </div>
                   </li>
                 </ul>
               </div>
+              <div class="separator">
+                <img class="separator__img" src="images/separator/main.svg" alt="">
+              </div>
+              <ul class="publications__list">
+                <li class="publication">
+                  <header class="publication__header">
+                    <img class="publication__person" src="images/publication/person.jpg" alt="">
+                    <a class="publication__person-name" href="#">
+                      Lorem ipsum dolor
+                    </a>
+                    <span class="publication__date">
+                      Дата публикации: <date>10.11.2023</date>
+                    </span>
+                  </header>
+                  <h2 class="publication__title">
+                    Lorem ipsum dolor sit amet
+                  </h2>
+                  <p class="publication__text">
+                    Lorem ipsum dolor sit amet consectetur. Neque varius sed vitae etiam. Lacinia faucibus amet id in.
+                    Nunc amet vel a gravida id eu viverra non. Urna elementum urna sed sed molestie neque ante varius
+                    praesent. Ipsum eu phasellus ligula nisi.
+                  </p>
+                  <div class="publication__img-wrapper">
+                    <img class="publication__img" src="images/publication/main.jpg" alt="">
+                  </div>
+                  <footer class="share" data-place-name="card-2">
+                    <ul class="share__tags">
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          Дизайн
+                        </a>
+                      </li>
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          маркетинг
+                        </a>
+                      </li>
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          ux
+                        </a>
+                      </li>
+                    </ul>
+                    <a class="share__share" href="#">
+                      <svg class="share__share-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="icon:tg">
+                          <rect id="Rectangle 7" width="40" height="40" rx="20" fill="white" />
+                          <path id="Vector"
+                            d="M21.375 11C21.1942 10.9993 21.0151 11.0333 20.848 11.1001C20.6808 11.1668 20.5289 11.265 20.4011 11.389C20.2733 11.5129 20.172 11.6602 20.1032 11.8223C20.0343 11.9844 19.9993 12.1581 20 12.3333V15.7453C13.8125 16.4093 9 21.4907 9 27.6667V29C12.0869 24.436 16.2188 23.7733 20 23.6813V27C19.9994 27.264 20.0797 27.5221 20.2307 27.7418C20.3816 27.9614 20.5965 28.1326 20.848 28.2336C21.0995 28.3346 21.3762 28.3608 21.6432 28.309C21.9101 28.2573 22.1551 28.1297 22.3471 27.9427L31 19.6667L22.3471 11.3893C22.2195 11.2655 22.068 11.1674 21.9011 11.1006C21.7343 11.0338 21.5555 10.9996 21.375 11Z"
+                            fill="#422921" />
+                        </g>
+                      </svg>
+                    </a>
+                  </footer>
+                </li>
+                <li class="separator">
+                  <img class="separator__img" src="images/separator/main.svg" alt="">
+                </li>
+                <li class="publication">
+                  <header class="publication__header">
+                    <img class="publication__person" src="images/publication/person.jpg" alt="">
+                    <a class="publication__person-name" href="#">
+                      Lorem ipsum dolor
+                    </a>
+                    <span class="publication__date">
+                      Дата публикации: <date>10.11.2023</date>
+                    </span>
+                  </header>
+                  <h2 class="publication__title">
+                    Lorem ipsum dolor sit amet
+                  </h2>
+                  <p class="publication__text">
+                    Lorem ipsum dolor sit amet consectetur. Neque varius sed vitae etiam. Lacinia faucibus amet id in.
+                    Nunc amet vel a gravida id eu viverra non. Urna elementum urna sed sed molestie neque ante varius
+                    praesent. Ipsum eu phasellus ligula nisi.
+                  </p>
+                  <div class="publication__img-wrapper">
+                    <img class="publication__img" src="images/publication/main.jpg" alt="">
+                  </div>
+                  <footer class="share">
+                    <ul class="share__tags">
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          Дизайн
+                        </a>
+                      </li>
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          маркетинг
+                        </a>
+                      </li>
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          ux
+                        </a>
+                      </li>
+                    </ul>
+                    <a class="share__share" href="#">
+                      <svg class="share__share-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="icon:tg">
+                          <rect id="Rectangle 7" width="40" height="40" rx="20" fill="white" />
+                          <path id="Vector"
+                            d="M21.375 11C21.1942 10.9993 21.0151 11.0333 20.848 11.1001C20.6808 11.1668 20.5289 11.265 20.4011 11.389C20.2733 11.5129 20.172 11.6602 20.1032 11.8223C20.0343 11.9844 19.9993 12.1581 20 12.3333V15.7453C13.8125 16.4093 9 21.4907 9 27.6667V29C12.0869 24.436 16.2188 23.7733 20 23.6813V27C19.9994 27.264 20.0797 27.5221 20.2307 27.7418C20.3816 27.9614 20.5965 28.1326 20.848 28.2336C21.0995 28.3346 21.3762 28.3608 21.6432 28.309C21.9101 28.2573 22.1551 28.1297 22.3471 27.9427L31 19.6667L22.3471 11.3893C22.2195 11.2655 22.068 11.1674 21.9011 11.1006C21.7343 11.0338 21.5555 10.9996 21.375 11Z"
+                            fill="#422921" />
+                        </g>
+                      </svg>
+                    </a>
+                  </footer>
+                </li>
+                <li class="join">
+                  <div class="join__inner">
+                    <p class="join__text">
+                      Lorem ipsum dolor sit amet consectetur. Vitae bibendum pretium blandit lacus. Etiam etiam.
+                    </p>
+                    <button class="join__btn btn">
+                      ВСТУПИТЬ В ОРДЕН
+                    </button>
+                  </div>
+                </li>
+                <li class="separator">
+                  <img class="separator__img" src="images/separator/main.svg" alt="">
+                </li>
+                <li class="publication">
+                  <header class="publication__header">
+                    <img class="publication__person" src="images/publication/person.jpg" alt="">
+                    <a class="publication__person-name" href="#">
+                      Lorem ipsum dolor
+                    </a>
+                    <span class="publication__date">
+                      Дата публикации: <date>10.11.2023</date>
+                    </span>
+                  </header>
+                  <h2 class="publication__title">
+                    Lorem ipsum dolor sit amet
+                  </h2>
+                  <p class="publication__text">
+                    Lorem ipsum dolor sit amet consectetur. Neque varius sed vitae etiam. Lacinia faucibus amet id in.
+                    Nunc amet vel a gravida id eu viverra non. Urna elementum urna sed sed molestie neque ante varius
+                    praesent. Ipsum eu phasellus ligula nisi.
+                  </p>
+                  <div class="publication__img-wrapper">
+                    <img class="publication__img" src="images/publication/main.jpg" alt="">
+                  </div>
+                  <footer class="share">
+                    <ul class="share__tags">
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          Дизайн
+                        </a>
+                      </li>
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          маркетинг
+                        </a>
+                      </li>
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          ux
+                        </a>
+                      </li>
+                    </ul>
+                    <a class="share__share" href="#">
+                      <svg class="share__share-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="icon:tg">
+                          <rect id="Rectangle 7" width="40" height="40" rx="20" fill="white" />
+                          <path id="Vector"
+                            d="M21.375 11C21.1942 10.9993 21.0151 11.0333 20.848 11.1001C20.6808 11.1668 20.5289 11.265 20.4011 11.389C20.2733 11.5129 20.172 11.6602 20.1032 11.8223C20.0343 11.9844 19.9993 12.1581 20 12.3333V15.7453C13.8125 16.4093 9 21.4907 9 27.6667V29C12.0869 24.436 16.2188 23.7733 20 23.6813V27C19.9994 27.264 20.0797 27.5221 20.2307 27.7418C20.3816 27.9614 20.5965 28.1326 20.848 28.2336C21.0995 28.3346 21.3762 28.3608 21.6432 28.309C21.9101 28.2573 22.1551 28.1297 22.3471 27.9427L31 19.6667L22.3471 11.3893C22.2195 11.2655 22.068 11.1674 21.9011 11.1006C21.7343 11.0338 21.5555 10.9996 21.375 11Z"
+                            fill="#422921" />
+                        </g>
+                      </svg>
+                    </a>
+                  </footer>
+                </li>
+                <li class="separator">
+                  <img class="separator__img" src="images/separator/main.svg" alt="">
+                </li>
+                <li class="publication">
+                  <header class="publication__header">
+                    <img class="publication__person" src="images/publication/person.jpg" alt="">
+                    <a class="publication__person-name" href="#">
+                      Lorem ipsum dolor
+                    </a>
+                    <a class="publication__person-name" href="#">
+                      Lorem ipsum dolor
+                    </a>
+                    <span class="publication__date">
+                      Дата публикации: <date>10.11.2023</date>
+                    </span>
+                  </header>
+                  <h2 class="publication__title">
+                    Lorem ipsum dolor sit amet
+                  </h2>
+                  <p class="publication__text">
+                    Lorem ipsum dolor sit amet consectetur. Neque varius sed vitae etiam. Lacinia faucibus amet id in.
+                    Nunc amet vel a gravida id eu viverra non. Urna elementum urna sed sed molestie neque ante varius
+                    praesent. Ipsum eu phasellus ligula nisi.
+                  </p>
+                  <div class="publication__img-wrapper">
+                    <img class="publication__img" src="images/publication/main.jpg" alt="">
+                  </div>
+                  <footer class="share">
+                    <ul class="share__tags">
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          Дизайн
+                        </a>
+                      </li>
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          маркетинг
+                        </a>
+                      </li>
+                      <li class="share__tag">
+                        <a class="share__tag-title" href="#">
+                          ux
+                        </a>
+                      </li>
+                    </ul>
+                    <a class="share__share" href="#">
+                      <svg class="share__share-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="icon:tg">
+                          <rect id="Rectangle 7" width="40" height="40" rx="20" fill="white" />
+                          <path id="Vector"
+                            d="M21.375 11C21.1942 10.9993 21.0151 11.0333 20.848 11.1001C20.6808 11.1668 20.5289 11.265 20.4011 11.389C20.2733 11.5129 20.172 11.6602 20.1032 11.8223C20.0343 11.9844 19.9993 12.1581 20 12.3333V15.7453C13.8125 16.4093 9 21.4907 9 27.6667V29C12.0869 24.436 16.2188 23.7733 20 23.6813V27C19.9994 27.264 20.0797 27.5221 20.2307 27.7418C20.3816 27.9614 20.5965 28.1326 20.848 28.2336C21.0995 28.3346 21.3762 28.3608 21.6432 28.309C21.9101 28.2573 22.1551 28.1297 22.3471 27.9427L31 19.6667L22.3471 11.3893C22.2195 11.2655 22.068 11.1674 21.9011 11.1006C21.7343 11.0338 21.5555 10.9996 21.375 11Z"
+                            fill="#422921" />
+                        </g>
+                      </svg>
+                    </a>
+                  </footer>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
-        <!-- talents end -->
+          <div class="main__additional-col additional">
+            <div class="additional__inner">
+              <div class="additional__card" data-place-to="card-1">
+                <p class="additional__text">
+                  Lorem ipsum dolor sit amet consectetur. Odio elit ultricies ultricies sagittis mauris aenean aliquam
+                  aliquet ut.
+                </p>
+                <button class="additional__btn">
+                  ПОДПИСАТЬСЯ
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -647,55 +948,21 @@
 
   </div>
 
-  <div class="modal" id="auth-modal">
+  <div class="modal" id="thanks-modal">
     <div class="modal__background"></div>
     <div class="modal__content">
       <div class="modal__card">
         <div class="modal__card-inner">
           <div class="modal__info">
             <h1 class="modal__title">
-              Авторизация
+              Ты молодец!
             </h1>
             <p class="modal__text">
-              Закрытый раздел сайта. Требуется вход.
+              Твой ответ успешно отправлен. Переходи к следующему уроку.
             </p>
             <a class="modal__link" href="#">
-              Войти через telegram
+              СЛЕДУЮЩИЙ УРОК
             </a>
-          </div>
-          <div class="modal__img-wrapper">
-            <picture>
-              <source srcset="images/modals/lock.webp" type="image/webp">
-              <img class="modal__img" src="images/modals/lock.png" alt="">
-            </picture>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal" id="unavailable-modal">
-    <div class="modal__background"></div>
-    <div class="modal__content">
-      <div class="modal__card">
-        <div class="modal__card-inner">
-          <div class="modal__info">
-            <h1 class="modal__title">
-              Раздел пока недоступен
-            </h1>
-            <p class="modal__text">
-              Мы усердно трудимся над остальными разделами Ордена Фриланс Сэров. Подписывайся, чтобы первым узнать
-              об обновлениях!
-            </p>
-            <a class="modal__link" href="#">
-              ПРИСОЕДИНИТЬСЯ К ЧАТУ
-            </a>
-          </div>
-          <div class="modal__img-wrapper">
-            <picture>
-              <source srcset="images/modals/lock.webp" type="image/webp">
-              <img class="modal__img" src="images/modals/lock.png" alt="">
-            </picture>
           </div>
         </div>
       </div>
