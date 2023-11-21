@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
               card.style.marginTop = `${currentElement.getBoundingClientRect().top + window.pageYOffset - mainOffset - personHeight}px`
               card.style.top = `${100 + 50 + personHeight}px`
               const cardHeight = card.clientHeight;
-              console.log(cardHeight);
               document.querySelector('.left__person').style.marginBottom = `${50 + 150 + cardHeight}px`
             } else {
               card.style.top = `${currentElement.getBoundingClientRect().top + window.pageYOffset - mainOffset}px`
@@ -51,12 +50,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
+    const imgToMobileSwitch = () => {
+      const separators = document.querySelectorAll('.separator__img');
+
+      if (separators) {
+        separators.forEach(sep => {
+          if (window.innerWidth > 1100 && window.innerWidth <= 1180 || window.innerWidth <= 480) {
+            sep.src = 'images/separator/main-mobile.svg';
+          } else {
+            sep.src = 'images/separator/main.svg';
+          }
+        })
+      }
+    }
+
     shortTextAreaActivate();
     placeCardsActivate();
+    imgToMobileSwitch();
 
     window.addEventListener('resize', () => {
       shortTextAreaActivate();
       placeCardsActivate();
+      imgToMobileSwitch();
     })
   }
 
