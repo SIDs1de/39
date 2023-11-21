@@ -28,25 +28,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const placeCardsActivate = () => {
-      const cards = document.querySelectorAll('[data-place-to]');
-
-      if (cards) {
-        const mainOffset = document.querySelector('.main').getBoundingClientRect().top + window.pageYOffset;
-        cards.forEach(card => {
-          const placeTo = card.dataset.placeTo
-          const currentElement = document.querySelector(`[data-place-name="${placeTo}"]`);
-          if (currentElement) {
-            if (card.classList.contains('left__card')) {
-              const personHeight = document.querySelector('.left__person').clientHeight;
-              card.style.marginTop = `${currentElement.getBoundingClientRect().top + window.pageYOffset - mainOffset - personHeight}px`
-              card.style.top = `${100 + 50 + personHeight}px`
-              const cardHeight = card.clientHeight;
-              document.querySelector('.left__person').style.marginBottom = `${50 + 150 + cardHeight}px`
-            } else {
-              card.style.top = `${currentElement.getBoundingClientRect().top + window.pageYOffset - mainOffset}px`
+      if (window.innerWidth > 1100) {
+        const cards = document.querySelectorAll('[data-place-to]');
+        if (cards) {
+          const mainOffset = document.querySelector('.main').getBoundingClientRect().top + window.pageYOffset;
+          cards.forEach(card => {
+            const placeTo = card.dataset.placeTo
+            const currentElement = document.querySelector(`[data-place-name="${placeTo}"]`);
+            if (currentElement) {
+              if (card.classList.contains('left__card')) {
+                const personHeight = document.querySelector('.left__person').clientHeight;
+                card.style.marginTop = `${currentElement.getBoundingClientRect().top + window.pageYOffset - mainOffset - personHeight}px`
+                card.style.top = `${100 + 50 + personHeight}px`
+                const cardHeight = card.clientHeight;
+                document.querySelector('.left__person').style.marginBottom = `${50 + 150 + cardHeight}px`
+              } else {
+                card.style.top = `${currentElement.getBoundingClientRect().top + window.pageYOffset - mainOffset}px`
+              }
             }
-          }
-        })
+          })
+        }
       }
     }
 

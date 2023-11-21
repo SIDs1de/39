@@ -2430,7 +2430,7 @@ dt {
 }
 @media (max-width: 1200px) {
   .news__item-title {
-    font-size: calc(14px + 3 * ((100vw - 320px) / 880));
+    font-size: calc(12px + 5 * ((100vw - 320px) / 880));
   }
 }
 .news__item-text {
@@ -2440,7 +2440,7 @@ dt {
 }
 @media (max-width: 1200px) {
   .news__item-text {
-    font-size: calc(14px + 3 * ((100vw - 320px) / 880));
+    font-size: calc(12px + 5 * ((100vw - 320px) / 880));
   }
 }
 .news__item-text + .news__item-text {
@@ -3283,6 +3283,7 @@ dt {
 }
 .publication__img {
   border-radius: 10px;
+  width: 100%;
 }
 
 .join {
@@ -3362,6 +3363,9 @@ dt {
   border-radius: 10px;
   max-width: 400px;
   margin: 0 auto;
+}
+.additional__card--mobile {
+  position: static !important;
 }
 .additional__card + .additional__card {
   margin-top: 10px;
@@ -3479,6 +3483,15 @@ dt {
   .right__btns-wrapper {
     display: none;
   }
+  .separator--mobile {
+    display: none;
+  }
+  .left__card--mobile {
+    display: none;
+  }
+  .left__person--mobile {
+    display: none;
+  }
 }
 @media (max-width: 1100px) {
   .title {
@@ -3543,6 +3556,11 @@ dt {
   }
 }
 @media (max-width: 1100px) {
+  .news .additional__inner {
+    margin: 0;
+  }
+}
+@media (max-width: 1100px) {
   .join {
     max-width: 800px;
     margin: 0 auto;
@@ -3559,6 +3577,59 @@ dt {
   .join__text {
     margin-right: 20px;
     margin-bottom: 0px;
+  }
+}
+@media (max-width: 1100px) {
+  .left__card {
+    position: static;
+    margin-bottom: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+  .left__person {
+    position: static;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .left__person-img-wrapper {
+    margin-right: 10px;
+  }
+  .left__person-img {
+    width: 80px;
+  }
+}
+@media (max-width: 1100px) and (max-width: 1200px) {
+  .left__person-img {
+    width: calc(40px + 40 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1100px) {
+  .left__person-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 1100px) and (max-width: 1200px) {
+  .left__person-name {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1100px) and (max-width: 1200px) {
+  .left__person-name {
+    margin-bottom: calc(0px + 5 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1100px) {
+  .left__person-date {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1100px) and (max-width: 1200px) {
+  .left__person-date {
+    font-size: calc(10px + 2 * ((100vw - 320px) / 880));
   }
 }
 @media (min-width: 1101px) {
