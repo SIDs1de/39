@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const textAreas = document.querySelectorAll('._short');
       if (textAreas) {
         textAreas.forEach(textArea => {
-          const textAreaText = textArea.value
+          const textAreaText = textArea.getAttribute('u-value')
           const windowWidth = window.innerWidth;
           let shortStr
           if (windowWidth >= 1289) {
@@ -65,9 +65,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
+    const showAllText = () => {
+      const btns = document.querySelectorAll('.answer__textarea-link');
+
+      btns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const textArea = btn.parentNode.querySelector('textarea')
+          textArea.style.height = '180px';
+          textArea.value = textArea.getAttribute('u-value')
+        })
+      })
+    }
+
     shortTextAreaActivate();
     placeCardsActivate();
     imgToMobileSwitch();
+    showAllText();
 
     window.addEventListener('resize', () => {
       shortTextAreaActivate();
