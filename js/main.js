@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const placeCardsActivate = () => {
+      const leftPerson = document.querySelector('.left__person');
+      const leftCard = document.querySelector('.left__card');
+      leftPerson.style.marginBottom = `${50 + 150 + leftCard.scrollHeight}px`
       if (window.innerWidth > 1100) {
         const cards = document.querySelectorAll('[data-place-to]');
         if (cards) {
@@ -40,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const personHeight = document.querySelector('.left__person').clientHeight;
                 card.style.marginTop = `${currentElement.getBoundingClientRect().top + window.pageYOffset - mainOffset - personHeight}px`
                 card.style.top = `${100 + 50 + personHeight}px`
-                const cardHeight = card.clientHeight;
-                document.querySelector('.left__person').style.marginBottom = `${50 + 150 + cardHeight}px`
+                // const cardHeight = card.clientHeight;
+                // document.querySelector('.left__person').style.marginBottom = `${50 + 150 + cardHeight}px`
               } else {
                 card.style.top = `${currentElement.getBoundingClientRect().top + window.pageYOffset - mainOffset}px`
               }
@@ -72,8 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', (e) => {
           e.preventDefault();
           const textArea = btn.parentNode.querySelector('textarea')
-          textArea.style.height = '180px';
           textArea.value = textArea.getAttribute('u-value')
+          textArea.style.height = `${textArea.scrollHeight + 10}px`
+          btn.style.display = 'none'
         })
       })
     }
