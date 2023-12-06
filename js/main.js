@@ -30,7 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const placeCardsActivate = () => {
       const leftPerson = document.querySelector('.left__person');
       const leftCard = document.querySelector('.left__card');
-      leftPerson.style.marginBottom = `${50 + 150 + leftCard.scrollHeight}px`
+      if (leftPerson) {
+        leftPerson.style.marginBottom = `${50 + 150 + leftCard.scrollHeight}px`
+      }
       if (window.innerWidth > 1100) {
         const cards = document.querySelectorAll('[data-place-to]');
         if (cards) {
