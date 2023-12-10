@@ -3644,7 +3644,7 @@ dt {
   }
 }
 .skills__card:hover .skills__card-img {
-  bottom: -17%;
+  bottom: -45px;
 }
 .skills__card-link {
   width: 100%;
@@ -3677,8 +3677,11 @@ dt {
 }
 .skills__card-img {
   position: absolute;
-  bottom: -20%;
-  right: -20%;
+  width: 615px;
+  height: 440px;
+  right: 0;
+  right: 0px;
+  bottom: -60px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -3686,6 +3689,17 @@ dt {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  max-width: initial;
+}
+@media (max-width: 1200px) {
+  .skills__card-img {
+    right: calc(-50px + 50 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .skills__card-img {
+    bottom: calc(-100px + 40 * ((100vw - 320px) / 880));
+  }
 }
 .skills__card-title {
   font-size: 36px;
@@ -4108,11 +4122,6 @@ dt {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media (max-width: 1200px) {
-  .work__inner {
-    padding: calc(15px + 5 * ((100vw - 320px) / 880));
-  }
 }
 .work__img-wrapper {
   position: relative;
@@ -4559,12 +4568,20 @@ dt {
     padding-right: calc(20px + 60 * ((100vw - 320px) / 880));
   }
 }
+@media (hover: hover) {
+  .access__inner:hover::before {
+    background-position: 0px -20px;
+  }
+}
 .access__inner::before {
   content: "";
   position: absolute;
   width: 1105px;
   height: 1105px;
-  background: url("../images/access/bg.png") center/contain no-repeat;
+  background: url("../images/access/bg.png") 0px 0/contain no-repeat;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   right: -220px;
   bottom: -485px;
 }
@@ -4581,7 +4598,7 @@ dt {
 .access__content {
   max-width: 674px;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 .access__title {
   font-family: Unbounded;
@@ -4883,6 +4900,18 @@ dt {
     overflow: hidden;
   }
 }
+@media (max-width: 1000px) {
+  .access__inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+}
 @media (max-width: 880px) {
   .lessons__list {
     -ms-grid-columns: (1fr)[2];
@@ -4897,6 +4926,8 @@ dt {
             flex-direction: column;
     margin: 0 auto;
     max-width: 420px;
+    padding: 22px;
+    padding-bottom: 25px;
   }
   .work__info {
     margin-left: 0;
@@ -5316,6 +5347,11 @@ dt {
 @media (max-width: 480px) and (max-width: 1200px) {
   .skills__btn {
     margin-top: calc(20px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 480px) {
+  .skills__card-inner {
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 @media (max-width: 480px) {
