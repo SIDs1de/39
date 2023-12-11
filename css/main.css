@@ -4946,8 +4946,11 @@ dt {
             flex: 0 1 auto;
     margin: 0 auto;
   }
+  .work__title {
+    text-align: left;
+  }
   .work__desc {
-    margin: 0 auto;
+    text-align: left;
   }
 }
 @media (max-width: 800px) {
